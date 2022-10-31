@@ -1,0 +1,38 @@
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 10px;
+}
+
+.box {
+    display: flex;
+    padding: 1%;
+    background-color: #e6e6e6;
+    gap: 0 1rem;
+}
+
+.left {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    padding: 1%;
+}
+
+.right {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    overflow: scroll;
+    padding: 1%;
+}
+
+#outname {
+    font-weight: 300;
+}

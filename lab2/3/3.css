@@ -1,0 +1,29 @@
+.one {
+    color: white;
+    background-color: red;
+    width: 35%;
+}
+
+.two {
+    color: white;
+    background-color: blue;
+    width: 50%;
+}
+
+.three {
+    color: white;
+    background-color: green;
+    width: 30%;
+}
+
+.four {
+    color: white;
+    background-color: gray;
+    width: 45%;
+}
+
+.five {
+    color: white;
+    background-color: olive;
+    width: 42.5%;
+}
