@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form id="form">
+            <div class="form-group">
+                <label for="fname" id="fname">ชื่อ:</label>
+                <input type="fname" class="form-control" id="fname1">
+            </div>
+            <div class="form-group">
+                <label for="lname" id="lname">นามสกุล:</label>
+                <input type="lname" class="form-control" id="lname1">
+            </div>
+            <div class="form-group">
+                <label for="country" id="country">ประเทศ:</label>
+                <select name="country">
+                    <option value="000" id="sele" selected>เลือกประเทศ</option>
+                    <option value="ไทย" id="th">ไทย</option>
+                    <option value="เวียดนาม" id="vn">เวียดนาม</option>
+                    <option value="ลาว" id="la">ลาว</option>
+                    <option value="มาเลย์เซีย" id="ma">มาเลย์เซีย</option>
+                    <option value="สิงคโปร์" id="sp">สิงคโปร์</option>
+                    <option value="ฟิลิปปินส์" id="fp">ฟิลิปปินส์</option>
+                    <option value="เมียนมาร์" id="mn">เมียนมาร์</option>
+                    <option value="กัมพูชา" id="cm">กัมพูชา</option>
+                    <option value="บรูไน" id="bn">บรูไน</option>
+                </select>
+        </form>
+    </div>
+    <button type="button" id="butt" onclick="change()">เปลี่ยนเป็นภาษาอังกฤษ</button>
+
+    <script>
+        let fname = document.getElementById("fname");
+        let lname = document.getElementById("lname");
+        let cou = document.getElementById("country");
+        let bot = document.getElementById("butt");
+        let sel = document.getElementById("sele");
+
+        function change() {
+            if (fname.innerHTML == 'ชื่อ:') {
+                fname.innerHTML = 'First Name:';
+                lname.innerHTML = 'Last Name:';
+                cou.innerHTML = 'Country:';
+                sel.innerHTML = 'Select a country';
+                bot.innerHTML = 'Change to Thai';
+                document.getElementById("th").innerHTML = 'Thailand';
+                document.getElementById("vn").innerHTML = 'Vietnam';
+                document.getElementById("la").innerHTML = 'Laos';
+                document.getElementById("ma").innerHTML = 'Malaysia';
+                document.getElementById("sp").innerHTML = 'Singapore';
+                document.getElementById("fp").innerHTML = 'Philippines';
+                document.getElementById("mn").innerHTML = 'Myanmar';
+                document.getElementById("cm").innerHTML = 'Cambodia';
+                document.getElementById("bn").innerHTML = 'Brunei';
+
+            }
+            
+            else if (fname.innerHTML == 'First Name:'){
+                fname.innerHTML = 'ชื่อ:';
+                lname.innerHTML = 'นามสกุล:';
+                cou.innerHTML = 'ประเทศ:';
+                sel.innerHTML = 'เลือกประเทศ';
+                bot.innerHTML = 'เปลี่ยนเป็นภาษาอังกฤษ';
+                document.getElementById("th").innerHTML = 'ไทย';
+                document.getElementById("vn").innerHTML = 'เวียดนาม';
+                document.getElementById("la").innerHTML = 'ลาว';
+                document.getElementById("ma").innerHTML = 'มาเลย์เซีย';
+                document.getElementById("sp").innerHTML = 'สิงคโปร์';
+                document.getElementById("fp").innerHTML = 'ฟิลิปปินส์';
+                document.getElementById("mn").innerHTML = 'เมียนมาร์';
+                document.getElementById("cm").innerHTML = 'กัมพูชา';
+                document.getElementById("bn").innerHTML = 'บรูไน';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="validator.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <p><label for='FirstName'>ชื่อ:</label>
+            <input type="text" id="FirstName" name="FirstName" />
+        </p>
+        <p><label for='LastName'>นามสกุล:</label>
+            <input type="text" id="LastName" name="LastName" />
+        </p>
+        <p><label for='Address'>ที่อยู่</label>
+            <textarea cols="20" rows="5" id="Address" name="Address"></textarea>
+        </p>
+        <p><label for='Country'>ประเทศ:</label>
+            <select id="Country" name="Country">
+                <option value="000" selected="selected">[เลือกประเทศ]</option>
+                <option value="008">Thailand</option>
+                <option value="012">Vietnam</option>
+                <option value="016">Laos</option>
+                <option value="020">Malaysia</option>
+                <option value="024">Singapore</option>
+                <option value="660">Philippines</option>
+                <option value="010">Myanmar</option>
+                <option value="028">Cambodia</option>
+                <option value="032">Brunei</option>
+                <option value="051">Indonesia</option>
+            </select>
+        </p>
+    </form>
+    
+    <button onclick="validateForm()">Validate</button>
+</body>
+</html>

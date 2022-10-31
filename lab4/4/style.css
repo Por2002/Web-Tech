@@ -1,0 +1,22 @@
+.horse { 
+    border-spacing: 0; 
+    border-collapse: collapse; 
+}
+
+.horse th { 
+    padding: .5em; 
+}
+
+.horse td { 
+    border: 1px solid; 
+    width: 100px; 
+    height: 100px; 
+}
+
+.horse .white { 
+    background: white; 
+}
+
+.horse .black { 
+    background: black; 
+}

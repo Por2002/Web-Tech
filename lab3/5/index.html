@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="left">
+                <form id="form">
+                    <h1>Create your card</h1>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="name" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="num">Phone</label>
+                        <input type="num" class="form-control" id="num">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">E-mail</label>
+                        <input type="mail" class="form-control" id="mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="com">Company</label>
+                        <input type="com" class="form-control" id="com">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="form-group col-sm-12 btn btn-primary" type="button"
+                            onclick="check()">Create</button>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <div class="text">
+                    <p>your card here</p>
+                </div>
+                <div class="card">
+                    <img src="flower.png" width="300" height="170">
+                    <div class="card-img-overlay mt-5">
+                        <div class="font-weight-bold" id="outname"></div>
+                        <div id="outphone"></div>
+                        <div id="outmail"></div>
+                        <div id="outcomp"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

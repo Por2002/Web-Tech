@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .cat1 {
+          padding:20px;
+          float:left;
+           
+        }
+        .cat2 {
+          padding:20px;
+          margin-top: 65px;
+          float:left;
+          
+        }
+        .cat3 {
+          padding:20px;
+          float:left;
+           
+        }
+        .cat4 {
+          padding:20px;
+          float:left;
+           
+        }
+
+        @media screen and (max-width:600px) {
+            .container {
+                grid-template-columns: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my cat</h1>
+    <p>This is my cat name Ruay. Ruay is a black cat and very cute. I love Ruay so much.
+        This is my cat name Ruay. Ruay is a black cat and very cute. I love Ruay so much.
+        This is my cat name Ruay. Ruay is a black cat and very cute. I love Ruay so much.
+        This is my cat name Ruay. Ruay is a black cat and very cute. I love Ruay so much.
+        This is my cat name Ruay. Ruay is a black cat and very cute. I love Ruay so much.
+    </p>
+    <div class="container">
+        <div class="cat1">
+            <h2>Picture of Ruay</h2>
+            <img src="cat1.png" style="max-width:50%;height:auto;">
+        </div>
+        <div class="cat2">
+            <img src="cat2.png" style="max-width:50%;height:auto;">
+        </div>
+    
+        <div class="cat3">
+            <img src="cat3.png" style="max-width:50%;height:auto;">
+        </div>
+        <div class="cat4">
+            <img src="cat4.png" style="max-width:50%;height:auto;">
+        </div>
+    </div>
+</body>
+</html>

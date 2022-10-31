@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="number" id="number">
+        <span>:</span>
+        <button type="submit" onclick="knight()">Submit</button>
+    </div>
+    <div style="margin-top: 50px;">
+        <table class="horse" id="table"></table>
+    </div>
+    <script>
+        function knight() {
+            let num = parseInt(document.getElementById('number').value);
+            let table = document.getElementById('table');
+            let isWhite = true;
+            let isBlack = true;
+            let ro = 1;
+
+            for (let i = 0; i < Math.floor(num / 8); i++) {
+                let row = table.insertRow(-1);
+                let cell;
+
+                if (ro % 2 != 0) {
+                    for (let j = 0; j < 8; j++) {
+                        cell = row.insertCell(-1);
+                        if (isWhite) {
+                            cell.classList.add("white")
+                            isWhite = false;
+                        } else {
+                            cell.classList.add("black")
+                            isWhite = true;
+                        }
+                    }
+                    ro++;
+                }
+                else {
+                    for (let j = 0; j < 8; j++) {
+                        cell = row.insertCell(-1);
+                        if (isBlack) {
+                            cell.classList.add("black")
+                            isBlack = false;
+                        } else {
+                            cell.classList.add("white")
+                            isBlack = true;
+                        }
+                    }
+                    ro++;
+                }
+
+
+            }
+            let row = table.insertRow(-1);
+            if (ro % 2 != 0) {
+                for (let k = 0; k < num % 8; k++) {
+                    cell = row.insertCell(-1);
+                    if (isWhite) {
+                        cell.classList.add("white")
+                        isWhite = false;
+                    } else {
+                        cell.classList.add("black")
+                        isWhite = true;
+                    }
+                }
+            }
+            else {
+                for (let k = 0; k < num % 8; k++) {
+                    cell = row.insertCell(-1);
+                    if (isBlack) {
+                        cell.classList.add("black")
+                        isBlack = false;
+                    } else {
+                        cell.classList.add("white")
+                        isBlack = true;
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

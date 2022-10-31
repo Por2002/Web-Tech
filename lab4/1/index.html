@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        <form id="forms">
+            <p><label for='var1'>Value 1:</label>
+                <input type="int" id="var1" name="var1" />
+            </p>
+            <p><label for='var2'>Value 2:</label>
+                <input type="int" id="var2" name="var2" />
+            </p>
+        </form>
+        <button type="button" onclick="calculate()">Calculate</button>
+        <p id="p1">Result : <span id="span1"></span></p>
+        <p id="p2"></p>
+    </div>
+
+    <script>
+        function calculate() {
+            let var1 = parseFloat(document.forms.forms.var1.value);
+            let var2 = parseFloat(document.forms.forms.var2.value);
+            let sum = var1 + var2
+            document.getElementById("span1").innerHTML = sum;
+
+            let tag = document.createElement("p");
+            let txt = document.createTextNode(var1 + " + " + var2 + " = " + sum);
+            tag.appendChild(txt);
+            let para = document.getElementById("p2");
+            para.appendChild(tag);
+        }
+    </script>
+</body>
+
+</html>

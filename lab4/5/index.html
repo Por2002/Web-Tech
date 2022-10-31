@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=dev3-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg-light">
+        <div class="d-flex justify-content-center mt-5">
+            <h1>KOR ROR SOR FOOD <span class="badge badge-warning">FISH</span></h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h6>Kor Ror Sor Food Fish but there are no fish here</h6>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mt-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="card-img" src="chick.png">
+                            </div>
+                            <div class="col-md-8 card-body">
+                                <h5 id="1">กุ่ย</h5>
+                                <p class="text-secondary">Deliver by <mark class="text-secondary">KOR ROR SOR
+                                        FOOD</mark></p>
+                                <div class="d-flex justify-content-end mr-4">
+                                    <button class="btn btn-warning" onclick="order(1)">Add Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="card-img" src="fries.png">
+                            </div>
+                            <div class="col-md-8 card-body">
+                                <h5 id="2">เฟรนช์ฟรุยส์</h5>
+                                <p class="text-secondary">Deliver by <mark class="text-secondary">KOR ROR SOR
+                                        FOOD</mark></p>
+                                <div class="d-flex justify-content-end mr-4">
+                                    <button class="btn btn-warning" onclick="order(2)">Add Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="card-img" src="ice.png">
+                            </div>
+                            <div class="col-md-8 card-body">
+                                <h5 id="3">ไอศกรุย</h5>
+                                <p class="text-secondary">Deliver by <mark class="text-secondary">KOR ROR SOR
+                                        FOOD</mark></p>
+                                <div class="d-flex justify-content-end mr-4">
+                                    <button class="btn btn-warning" onclick="order(3)">Add Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="list-group my-3" id="order">
+                        <li class="list-group-item active">รายการออเดอร์</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function order(menu_id) {
+            let parent = document.getElementById('order');
+            let bua = document.createElement('li');
+            bua.className = 'list-group-item';
+            let row = document.createElement('div');
+            row.className = 'row'
+            let div1 = document.createElement('div');
+            div1.className = 'col'
+            let div2 = document.createElement('div');
+            div2.className = 'col d-flex justify-content-end'
+            
+            let name = document.getElementById(menu_id).innerText;
+            let amount = document.createTextNode('x1');
+            let menu = document.createTextNode(name);
+            row.appendChild(div1);
+            row.appendChild(div2);
+            div1.appendChild(menu);
+            div2.appendChild(amount);
+            bua.appendChild(row);
+            parent.appendChild(bua);
+        }
+    </script>
+</body>
+
+</html>

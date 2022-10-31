@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form id="form">
+            <span>
+                <input type="text" class="form-control" id="stuid" placeholder="รหัสนักศึกษา">
+            </span>
+            <span>
+                <input type="text" class="form-control" id="fname" placeholder="ชื่อ">
+            </span>
+            <span>
+                <input type="text" class="form-control" id="lname" placeholder="นามสกุล">
+            </span>
+            <button type="button" id="bot" onclick="add()">ลงทะเบียน</button>
+        </form>
+    </div>
+    <div>
+        <table id="tab">
+            <tr>
+                <th>ลำดับที่</th>
+                <th>รหัสนักศึกษา</th>
+                <th>ชื่อ</th>
+                <th>นามสกุล</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+    let lap = 1;
+        function add() {
+            let stu = document.forms.form.stuid.value;
+            let fname = document.forms.form.fname.value;
+            let lname = document.forms.form.lname.value;
+
+            let big = document.createElement("tr");
+            let lek = document.createElement("td");
+            let por = document.getElementById("tab");
+
+            if (lap != 1) {
+                lek.appendChild(document.createTextNode(lap));
+                big.appendChild(lek);
+                por.appendChild(big);
+                lap += 1
+            }
+            
+            else if (lap == 1) {
+                lek.appendChild(document.createTextNode(lap));
+                big.appendChild(lek);
+                por.appendChild(big);
+                lap += 1
+            }
+            
+            let lek1 = document.createElement("td");
+            lek1.appendChild(document.createTextNode(stu));
+            big.appendChild(lek1);
+            por.appendChild(big);
+
+            let lek2 = document.createElement("td");
+            lek2.appendChild(document.createTextNode(fname));
+            big.appendChild(lek2);
+            por.appendChild(big);
+
+            let lek3 = document.createElement("td");
+            lek3.appendChild(document.createTextNode(lname));
+            big.appendChild(lek3);
+            por.appendChild(big);
+        }
+    </script>
+</body>
+</html>

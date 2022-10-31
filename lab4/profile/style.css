@@ -1,0 +1,14 @@
+.navbar {
+    background-color: #9370DB;
+    font-size: 20px;
+}
+
+.container {
+    background-color: #f8f9fa;
+    width: 100%;
+    max-width: 1600px;
+    box-shadow: 0 10px 10px -2px rgba(163, 163, 163, 0.8);
+    border-radius: 25px;
+    margin-top: 120px;
+    padding: 20px;
+}

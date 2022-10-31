@@ -1,0 +1,10 @@
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.col {
+    margin-right: 10px;
+}

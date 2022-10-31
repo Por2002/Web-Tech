@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myObj = {
+            "firstname":"John",
+            "lastname":"Doe",
+            "age":30,
+            "cars":[ "Ford", "BMW", "Fiat" ]
+        };
+
+        let myJson = '{\
+            "firstname":"John",\
+            "lastname":"Doe",\
+            "age":30,\
+            "cars":[ "Ford", "BMW", "Fiat" ]\
+        }';
+
+        let myObj = JSON.parse(myJson);
+
+        document.write( myObj.firstname + "<br>");
+        document.write( myObj.lastname + "<br>");
+        document.write( myObj.age + "<br>");
+        
+        //old
+        for(let i = 0; i < myObj.cars.length; i++) {
+            document.write( myObj.cars[i] + ", ");
+        }
+
+        document.write("<br>")
+
+        //new
+        for(let car of myObj.cars) {
+            document.write( cars + ", ");
+        }
+        </script>
+</body>
+</html>

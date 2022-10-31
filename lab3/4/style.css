@@ -1,0 +1,54 @@
+.absolute {
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    width: 30%;
+    left: 80px;
+    top: 8px;
+    height: 204px;
+}
+
+.math {
+    color: white;
+    background-color: blue;
+    width: 10%;
+    padding: 10px;
+    margin: 3;
+    z-index: 1;
+}
+
+.thai {
+    color: white;
+    background-color: blue;
+    width: 12%;
+    padding: 10px;
+    margin: 3;
+    z-index: 1;
+}
+
+.eng {
+    color: white;
+    background-color: blue;
+    width: 8%;
+    padding: 10px;
+    margin: 3;
+    z-index: 1;
+}
+
+.sci {
+    color: white;
+    background-color: blue;
+    width: 20%;
+    padding: 10px;
+    margin: 3;
+    z-index: 1;
+}
+
+.soc {
+    color: white;
+    background-color: blue;
+    width: 17%;
+    padding: 10px;
+    margin: 3;
+    z-index: 1;
+}

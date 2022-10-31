@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.box {
+    display: flex;
+    padding: 0.5%;
+    background-color: #eee;
+    width: 80%;
+}
+
+.left {
+    background-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 500px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c7583;
+}
+
+.right {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+

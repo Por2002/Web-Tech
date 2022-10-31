@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        <p id="p1">One</p>
+        <p id="p2">Two</p>
+        <p id="p3">Three</p>
+        <!-- add a new element here -->
+    </div>
+
+    <div id="div2">
+        <ul id="myList">
+            <li>Milk</li>
+            <li>Tea</li>
+        </ul>
+    </div>
+
+    <button type="button" onclick="addNode()">Add Node</button>
+    <button type="button" onclick="deleteNode()">Delete Node</button>
+    <button type="button" onclick="addNewImage()">Add Image</button>
+
+    <script>
+        function addNode() {
+            // <p>a new paragraph</p>
+            let ptag = document.createElement("p");
+            let txt = document.createTextNode("a new paragraph");
+            ptag.appendChild(txt);
+            // select a parent node
+            let parent1 = document.getElementById("div1");
+            parent1.appendChild(ptag);
+
+            /*  uncomment in step 2 **/
+            // let childP1 = document.getElementById("p1");
+            // parent1.insertBefore(ptag, childP1);
+        }
+        function addNewImage() {
+            // <img src="apples.jpg">
+            let imgtag = document.createElement("img");
+            let srcAttr = document.createAttribute("src");
+            srcAttr.value = "apples.jpg";
+            let widthAttr = document.createAttribute("width");
+            widthAttr.value = "400";
+            imgtag.setAttributeNode(srcAttr);
+            // add to <body>
+            document.body.appendChild(imgtag);
+        }
+
+        function deleteNode() {
+            let parent2 = document.getElementById("div1");
+            let delPtag = document.getElementById("p1");
+            parent2.removeChild(delPtag);
+        }
+    </script>
+</body>
+
+</html>

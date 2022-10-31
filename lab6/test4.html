@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        .col-sm.bg-success {
+            padding: 20px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .col-sm.bg-warning {
+            padding: 20px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+ </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Responsive Layout</h1>
+        <!---- 2 columns ----->
+        <p>Two columns: 50% width on all screens, except for extra small (100% width on screens less than
+            <strong>576px</strong> wide)</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm bg-success">1 of 2</div>
+                <div class="col-sm bg-warning">2 of 2</div>
+            </div>
+        </div>
+        <br>
+        <!---- 4 columns ----->
+        <p>Four columns: 25% width on all screens, except for extra small (100% width on screens less than
+            <strong>576px</strong> wide)</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm bg-success">1 of 4</div>
+                <div class="col-sm bg-warning">2 of 4</div>
+                <div class="col-sm bg-success">3 of 4</div>
+                <div class="col-sm bg-warning">4 of 4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
